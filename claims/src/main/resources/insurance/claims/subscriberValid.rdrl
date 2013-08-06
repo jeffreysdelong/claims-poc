@@ -1,7 +1,0 @@
-package insurance.claims;
-
-rule "subscriberValid"
-	dialect "mvel"
-	when
-	then
-end
