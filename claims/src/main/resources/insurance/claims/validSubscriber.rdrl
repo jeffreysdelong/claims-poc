@@ -7,6 +7,7 @@ import com.insurance.claim.Provider;
 import com.insurance.claim.ServiceInfo;
 
 rule "validSubscriber"
+	ruleflow-group "eligibility"
 	dialect "mvel"
 	when
 		claim : Claim( memberId < "100000" )
