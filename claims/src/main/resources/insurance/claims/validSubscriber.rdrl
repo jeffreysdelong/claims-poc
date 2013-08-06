@@ -1,0 +1,7 @@
+package insurance.claims;
+
+rule "validSubscriber"
+	dialect "mvel"
+	when
+	then
+end
