@@ -9,5 +9,8 @@ import com.insurance.claim.ServiceInfo;
 rule "validSubscriber"
 	dialect "mvel"
 	when
+		claim : Claim( memberId < "100000" )
 	then
+		claim.setAmountAllowable( 0B );
+		update( claim );
 end
