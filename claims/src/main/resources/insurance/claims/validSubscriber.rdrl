@@ -1,5 +1,11 @@
 package insurance.claims;
 
+import com.insurance.claim.Claim;
+import com.insurance.claim.Copay;
+import com.insurance.claim.PolicyHolder;
+import com.insurance.claim.Provider;
+import com.insurance.claim.ServiceInfo;
+
 rule "validSubscriber"
 	dialect "mvel"
 	when
