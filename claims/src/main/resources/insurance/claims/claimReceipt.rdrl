@@ -4,6 +4,7 @@ import com.insurance.claim.Claim;
 import com.insurance.claim.PolicyHolder;
 
 rule "claimReceipt"
+	ruleflow-group "receiveClaim"
 	dialect "mvel"
 	when
 		claim : Claim( )
