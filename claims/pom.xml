@@ -5,6 +5,13 @@
   <groupId>insurance</groupId>
   <artifactId>claims</artifactId>
   <version>0.1</version>
+  <dependencies>
+    <dependency>
+      <groupId>org.insurance</groupId>
+      <artifactId>claim</artifactId>
+      <version>1.0</version>
+    </dependency>
+  </dependencies>
   <repositories>
     <repository>
       <id>guvnor-m2-repo</id>
