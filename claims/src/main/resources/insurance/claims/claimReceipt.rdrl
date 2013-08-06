@@ -1,7 +1,14 @@
 package insurance.claims;
 
+import com.insurance.claim.Claim;
+import com.insurance.claim.PolicyHolder;
+
 rule "claimReceipt"
 	dialect "mvel"
 	when
+		claim : Claim( )
 	then
+		PolicyHolder fact0 = new PolicyHolder();
+		fact0.setId( claim.memberId );
+		insert( fact0 );
 end
