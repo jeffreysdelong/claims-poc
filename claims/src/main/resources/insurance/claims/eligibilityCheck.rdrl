@@ -1,7 +1,0 @@
-package insurance.claims;
-
-rule "eligibilityCheck"
-	dialect "mvel"
-	when
-	then
-end
